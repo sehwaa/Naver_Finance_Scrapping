@@ -16,7 +16,7 @@ for idx, tr_child in enumerate(tr):
         if idx == 0:
             if "nv01" in tr[0].find_element_by_xpath("//td[@id='now_value']/strong").get_attribute("class"):
                 print(f"{p_list[0]}: {p_list[1]}(하락), {p_list[2]}: {p_list[3]}")
-            elif "red02" in tr[0].find_element_by_xpath("//td[@id='now_value']/strong").get_attribute("class"):
+            elif "red01" in tr[0].find_element_by_xpath("//td[@id='now_value']/strong").get_attribute("class"):
                 print(f"{p_list[0]}: {p_list[1]}(상승), {p_list[2]}: {p_list[3]}")
             else:
                 print(f"{p_list[0]}: {p_list[1]}, {p_list[2]}: {p_list[3]}")
